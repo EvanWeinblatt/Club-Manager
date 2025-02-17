@@ -1,14 +1,98 @@
-{% extends 'base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UF Open Source Club - Smoother Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="C:\Users\EvanI\Club-Manager\app\clubs\static\clubs\club-home.css">
+</head>
+<body>
+  <header class="navbar fade-section">
+    <div class="navbar__brand">
+      UF Open Source Club
+    </div>
+    <nav class="navbar__menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-{% block head %}
-<link rel="stylesheet" href="{% static 'clubs/club-home.css' %}">
-{% endblock %}
+  <section class="hero fade-section">
+    <div class="hero__content">
+      <h1>Welcome!</h1>
+      <p>
+        Placeholder text for a brief introduction about the club, its goals, or any other welcome message.
+      </p>
+      <button class="cta">Get Involved</button>
+    </div>
+  </section>
 
-{% block body %}
+  <section class="highlights fade-section">
+    <h2>Latest News & Announcements</h2>
+    <div class="highlights__cards">
+      <article class="card">
+        <h3>[Announcement #1]</h3>
+        <p>Brief placeholder text for an important announcement.</p>
+        <a href="#" class="card__link">Learn more</a>
+      </article>
+      <article class="card">
+        <h3>[Announcement #2]</h3>
+        <p>Brief placeholder text for another important announcement.</p>
+        <a href="#" class="card__link">View details</a>
+      </article>
+      <article class="card">
+        <h3>[Announcement #3]</h3>
+        <p>Placeholder text for yet another announcement.</p>
+        <a href="#" class="card__link">Sign up</a>
+      </article>
+    </div>
+  </section>
 
-<section>
-  <div>Welcome to {{ club.name }}</div>
-</section>
+  <section class="about fade-section">
+    <div class="about__content">
+      <h2>[Our Mission]</h2>
+      <p>
+        Placeholder text describing your club’s mission, vision, or any key points you want to highlight.
+      </p>
+    </div>
+  </section>
 
-{% endblock %}
+  <section class="events fade-section">
+    <h2>Upcoming Events</h2>
+    <ul class="events__list">
+      <li class="events__item">
+        <h4>[Event #1]</h4>
+        <p>Placeholder info, date, or location.</p>
+      </li>
+      <li class="events__item">
+        <h4>[Event #2]</h4>
+        <p>Placeholder info, date, or location.</p>
+      </li>
+      <li class="events__item">
+        <h4>[Event #3]</h4>
+        <p>Placeholder info, date, or location.</p>
+      </li>
+    </ul>
+    <button class="cta--secondary">View All Events</button>
+  </section>
+
+  <footer class="footer fade-section">
+    <div class="footer__container">
+      <p>&copy; 2025 UF Open Source Club</p>
+      <p>
+        Connect with us on 
+        <a href="#">[GitHub]</a> | 
+        <a href="#">[Slack]</a> | 
+        <a href="#">[Mailing List]</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="C:\Users\EvanI\Club-Manager\app\clubs\static\clubs\club-home.js"></script>
+</body>
+</html>
