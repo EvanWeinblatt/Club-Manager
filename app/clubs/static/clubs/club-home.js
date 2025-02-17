@@ -19,5 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
-  console.log("UF Open Source Club - Smoother Gradient Page Loaded!");
+ 
   
